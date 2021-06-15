@@ -1,0 +1,100 @@
+diff a/Deliverian/Func.cpp b/Deliverian/Func.cpp	(rejected hunks)
+@@ -155,6 +155,98 @@
+ 	}
+ 
+ 
++//=============================================================================
++// ���_���W�̐ݒ�	������t��������ꍇ �Q�_�ŐL�яk����ꍇ
++//=============================================================================
++void SetVertexVeticalSpread(VERTEX_2D *g_vertexWk,
++	D3DXVECTOR3 Spos,	//�X�^�[�g�|�W�V����
++	D3DXVECTOR3 Epos,	//�L�у|�W�V����
++	float Texture_Size_x, //����
++	float Texture_Size_y,
++	float baseAngle,
++	float rotation)
++{
++	D3DXVECTOR3 tempVec3 = D3DXVECTOR3(Texture_Size_x / 2, Texture_Size_y / 2, 0);
++
++	double TempLen = D3DXVec3Length(&tempVec3);
++
++	D3DXVECTOR3 TempD3 = D3DXVECTOR3(0, 0, 0);
++	D3DXVECTOR3 MoveD3 = D3DXVECTOR3(0, 0, 0);
++	D3DXVECTOR3 LimitD3 = D3DXVECTOR3(0, 0, 0);
++
++	MoveD3 = Epos - Spos;
++	//���E�_
++	float t;
++	t = 50.0f / D3DXVec3Length(&MoveD3);
++	LimitD3 = t * MoveD3;
++
++	/*
++	g_vertexWk[0].vtx = D3DXVECTOR3(Spos.x - Texture_Size_x / 2, Spos.y, Spos.z);
++	g_vertexWk[1].vtx = D3DXVECTOR3(Spos.x + Texture_Size_x / 2, Spos.y, Spos.z);
++	g_vertexWk[2].vtx = D3DXVECTOR3(Epos.x - Texture_Size_x / 2, Epos.y, Spos.z);
++	g_vertexWk[3].vtx = D3DXVECTOR3(Epos.x + Texture_Size_x / 2, Epos.y, Spos.z);
++	*/
++	/*
++	TempD3 = D3DXVECTOR3(Spos.x - Texture_Size_x / 2, Spos.y, Spos.z);
++	TempD3.x += cosf(rotation) * TempLen;
++	TempD3.y += sinf(rotation) * TempLen;
++	g_vertexWk[0].vtx = D3DXVECTOR3(TempD3.x, TempD3.y, Spos.z);
++
++	TempD3 = D3DXVECTOR3(Spos.x + Texture_Size_x / 2, Spos.y, Spos.z);
++	TempD3.x = Spos.x + cosf(rotation) * TempLen ;
++	TempD3.y = Spos.y - sinf(rotation) * TempLen ;
++	g_vertexWk[1].vtx = D3DXVECTOR3(TempD3.x, TempD3.y, Spos.z);
++
++	TempD3 = D3DXVECTOR3(Epos.x - Texture_Size_x / 2, Epos.y, Spos.z);
++	TempD3.x = Epos.x - cosf(rotation) * TempLen;
++	TempD3.y = Epos.y + sinf(rotation) * TempLen;
++	g_vertexWk[2].vtx = D3DXVECTOR3(TempD3.x, TempD3.y, Epos.z);
++
++	TempD3 = D3DXVECTOR3(Epos.x + Texture_Size_x / 2, Epos.y, Spos.z);
++	TempD3.x = Epos.x + cosf(rotation) * TempLen;
++	TempD3.y = Epos.y + sinf(rotation) * TempLen;
++	g_vertexWk[3].vtx = D3DXVECTOR3(TempD3.x, TempD3.y, Epos.z);
++	*/
++
++	//////�O�p�֐��̉��@�藝
++	/*
++	TempD3.x = Spos.x - cosf(baseAngle + rotation) * TempLen - MoveD3.x;
++	TempD3.y = Spos.y - sinf(baseAngle + rotation) * TempLen - MoveD3.y;
++	g_vertexWk[0].vtx = D3DXVECTOR3(TempD3.x, TempD3.y, Spos.z);
++
++	TempD3.x = Spos.x + cosf(baseAngle - rotation) * TempLen - MoveD3.x;
++	TempD3.y = Spos.y - sinf(baseAngle - rotation) * TempLen - MoveD3.y;
++	g_vertexWk[1].vtx = D3DXVECTOR3(TempD3.x, TempD3.y, Spos.z);
++
++	TempD3.x = Epos.x - cosf(baseAngle - rotation) * TempLen+ MoveD3.x;
++	TempD3.y = Epos.y + sinf(baseAngle - rotation) * TempLen+ MoveD3.y;
++	g_vertexWk[2].vtx = D3DXVECTOR3(TempD3.x, TempD3.y, Epos.z);
++
++	TempD3.x = Epos.x + cosf(baseAngle + rotation) * TempLen + MoveD3.x;
++	TempD3.y = Epos.y + sinf(baseAngle + rotation) * TempLen + MoveD3.y;
++	g_vertexWk[3].vtx = D3DXVECTOR3(TempD3.x, TempD3.y, Epos.z);
++	*/
++	
++	TempD3.x = Spos.x - cosf(baseAngle - rotation) * TempLen - LimitD3.x;
++	TempD3.y = Spos.y + sinf(baseAngle - rotation) * TempLen - LimitD3.y;
++	g_vertexWk[0].vtx = D3DXVECTOR3(TempD3.x, TempD3.y, Spos.z);
++
++	TempD3.x = Spos.x + cosf(baseAngle + rotation) * TempLen - LimitD3.x;
++	TempD3.y = Spos.y + sinf(baseAngle + rotation) * TempLen - LimitD3.y;
++	g_vertexWk[1].vtx = D3DXVECTOR3(TempD3.x, TempD3.y, Spos.z);
++
++	TempD3.x = Epos.x - cosf(baseAngle + rotation) * TempLen;
++	TempD3.y = Epos.y - sinf(baseAngle + rotation) * TempLen;
++	g_vertexWk[2].vtx = D3DXVECTOR3(TempD3.x, TempD3.y, Epos.z);
++
++	TempD3.x = Epos.x + cosf(baseAngle - rotation) * TempLen;
++	TempD3.y = Epos.y - sinf(baseAngle - rotation) * TempLen;
++	g_vertexWk[3].vtx = D3DXVECTOR3(TempD3.x, TempD3.y, Epos.z);
++	
++
++}
++
++
+ 
+ 
+ //�Q�̃x�N�g��AB�̂Ȃ��p�x�Ƃ���߂�

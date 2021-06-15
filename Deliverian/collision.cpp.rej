@@ -1,0 +1,18 @@
+diff a/Deliverian/collision.cpp b/Deliverian/collision.cpp	(rejected hunks)
+@@ -202,14 +202,14 @@
+ 			return;
+ 
+ 		//�q�b�g���Ă��邩��`�F�b�N����i�{�b�N�X�Łj
+-		size1 = D3DXVECTOR3(BULLET_WIDTH / 2, BULLET_HEIGHT / 2, 0);
++		size1 = D3DXVECTOR3(bullet->size.x / 2, bullet->size.y / 2, 0);
+ 		size2 = D3DXVECTOR3(TEXTURE_PLAYER_SIZE_X / 2, TEXTURE_PLAYER_SIZE_Y / 2, 0);
+ 
+ 		if (HitCheckBB(bullet->pos, size1,
+ 			player->pos, size2))
+ 		{
+ 			//�v���C���[HP����炷
+-			PlusPlayerHp(-1);
++			PlusPlayerHp(bullet->power);
+ 			//���G��Ԃɂ���
+ 			ChangePlayerState(PLAYER_STATE_MUTEKI);
+ 		}

@@ -1,0 +1,12 @@
+diff a/Deliverian/enemy_laser.cpp b/Deliverian/enemy_laser.cpp	(rejected hunks)
+@@ -188,8 +188,8 @@
+ }
+ 
+ //�e�̎ˏo����
+-void SetEnemyLaser(D3DXVECTOR3 pos, int affiliation, int color
+-					, float Futosa, int power, D3DXVECTOR3 dir)
++LASER* SetEnemyLaser(D3DXVECTOR3 pos, int affiliation, int color
++					, float Futosa, float nagasa, int power, D3DXVECTOR3 dir)
+ {
+ 	for (int i = 0; i < MAX_LASER; i++)
+ 	{

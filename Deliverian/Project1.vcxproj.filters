@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\STG">
+      <UniqueIdentifier>{bcd5a566-c95c-400d-8964-11667073ddb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\STG\PLAYER">
+      <UniqueIdentifier>{0f92d27b-31c7-44dd-a539-4171118ef197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\STG">
+      <UniqueIdentifier>{bec23303-8e1a-41df-bbc2-3ff6fcff8694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\STG\PLAYER">
+      <UniqueIdentifier>{0723389c-c180-4e47-87a5-77bb45691c75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MAIN">
+      <UniqueIdentifier>{4aefd719-d583-49dc-a7c6-ed59bdff9a78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\MAIN">
+      <UniqueIdentifier>{92c07a52-e1ff-43a3-af00-b80ac7278e4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\STG\ENEMY">
+      <UniqueIdentifier>{02e2545a-095c-4d70-8b88-9a0d42e342e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\STG\ENEMY">
+      <UniqueIdentifier>{b17c96de-0da2-4a17-9133-25241ebe5dc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\STG\Scene">
+      <UniqueIdentifier>{6e9499d1-a8f3-438a-b1eb-af0d2d213495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\STG\Scene\Title">
+      <UniqueIdentifier>{3b6fa764-6455-4966-883e-d033a6037e69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\STG\Scene\Result">
+      <UniqueIdentifier>{7ea810e4-b4cd-4567-a8c1-31f9165a222e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\STG\Scene">
+      <UniqueIdentifier>{4e276195-9a54-4a3b-90e2-e9a9aa0f781c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\STG\Scene\Result">
+      <UniqueIdentifier>{57288574-e89e-4a4b-ae5d-a633cca40c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\STG\Scene\Title">
+      <UniqueIdentifier>{5ddabfa4-a0e2-4e57-bc35-9886b18e9c77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\STG\Scene\GAME">
+      <UniqueIdentifier>{0c2bd3ed-859c-44c9-aca1-f8396da694c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\STG\Scene\GAME">
+      <UniqueIdentifier>{b01c6e7a-7c38-4b93-9178-276acf9309e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\data">
+      <UniqueIdentifier>{3bbd9e6f-3fa1-4709-bfb5-94344fa6dcd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\data\BGM">
+      <UniqueIdentifier>{cbd3191d-a70f-4650-be8c-d677ac7cdcd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\STG\UI">
+      <UniqueIdentifier>{624bc605-6b23-4a56-bc97-4de07b48666c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\STG\UI">
+      <UniqueIdentifier>{59307e54-a362-4165-9174-5ddf39ec2e88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\STG\ENEMY\Boss">
+      <UniqueIdentifier>{f87effaa-5bd9-4813-b5a7-d9f1ee740dfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\STG\ENEMY\Boss">
+      <UniqueIdentifier>{4ebc30d9-0283-4d7e-9ae4-5b01ff0b3df5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bulletsight.cpp">
+      <Filter>ソース ファイル\STG\PLAYER</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>ソース ファイル\STG\PLAYER</Filter>
+    </ClCompile>
+    <ClCompile Include="sound.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="Func.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy.cpp">
+      <Filter>ソース ファイル\STG\ENEMY</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyEmitter.cpp">
+      <Filter>ソース ファイル\STG\ENEMY</Filter>
+    </ClCompile>
+    <ClCompile Include="fade.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="table.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw_text.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllInput.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadCsv.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>ソース ファイル\STG\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="bgTop.cpp">
+      <Filter>ソース ファイル\STG\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="title.cpp">
+      <Filter>ソース ファイル\STG\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="result.cpp">
+      <Filter>ソース ファイル\STG\Scene\Result</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>ソース ファイル\STG</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_AI.cpp">
+      <Filter>ソース ファイル\STG\ENEMY</Filter>
+    </ClCompile>
+    <ClCompile Include="explosion.cpp">
+      <Filter>ソース ファイル\STG</Filter>
+    </ClCompile>
+    <ClCompile Include="Blade.cpp">
+      <Filter>ソース ファイル\STG\Scene\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>ソース ファイル\STG\Scene\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="collision.cpp">
+      <Filter>ソース ファイル\STG\Scene\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="stage.cpp">
+      <Filter>ソース ファイル\STG\Scene\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_draw.cpp">
+      <Filter>ソース ファイル\STG\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Life.cpp">
+      <Filter>ソース ファイル\STG\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="bgBlack.cpp">
+      <Filter>ソース ファイル\STG\Scene\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy_laser.cpp">
+      <Filter>ソース ファイル\STG\ENEMY</Filter>
+    </ClCompile>
+    <ClCompile Include="boss.cpp">
+      <Filter>ソース ファイル\STG\ENEMY\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="boss_AI.cpp">
+      <Filter>ソース ファイル\STG\ENEMY\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Boss.cpp">
+      <Filter>ソース ファイル\STG\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bulletsight.h">
+      <Filter>ヘッダー ファイル\STG\PLAYER</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>ヘッダー ファイル\STG\PLAYER</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>ヘッダー ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="sound.h">
+      <Filter>ヘッダー ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy.h">
+      <Filter>ヘッダー ファイル\STG\ENEMY</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyEmitter.h">
+      <Filter>ヘッダー ファイル\STG\ENEMY</Filter>
+    </ClInclude>
+    <ClInclude Include="fade.h">
+      <Filter>ヘッダー ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllInput.h">
+      <Filter>ヘッダー ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw_text.h">
+      <Filter>ヘッダー ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadCsv.h">
+      <Filter>ヘッダー ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="bgTop.h">
+      <Filter>ヘッダー ファイル\STG\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="result.h">
+      <Filter>ヘッダー ファイル\STG\Scene\Result</Filter>
+    </ClInclude>
+    <ClInclude Include="title.h">
+      <Filter>ヘッダー ファイル\STG\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_AI.h">
+      <Filter>ヘッダー ファイル\STG\ENEMY</Filter>
+    </ClInclude>
+    <ClInclude Include="explosion.h">
+      <Filter>ヘッダー ファイル\STG</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>ヘッダー ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="collision.h">
+      <Filter>ヘッダー ファイル\STG\Scene\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>ヘッダー ファイル\STG\Scene\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="Blade.h">
+      <Filter>ヘッダー ファイル\STG\Scene\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="stage.h">
+      <Filter>ヘッダー ファイル\STG\Scene\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>ヘッダー ファイル\STG</Filter>
+    </ClInclude>
+    <ClInclude Include="Func_texture.h">
+      <Filter>ヘッダー ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_draw.h">
+      <Filter>ヘッダー ファイル\STG\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Life.h">
+      <Filter>ヘッダー ファイル\STG\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="bgBlack.h">
+      <Filter>ヘッダー ファイル\STG\Scene\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy_laser.h">
+      <Filter>ヘッダー ファイル\STG\ENEMY</Filter>
+    </ClInclude>
+    <ClInclude Include="boss.h">
+      <Filter>ヘッダー ファイル\STG\ENEMY\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="boss_AI.h">
+      <Filter>ヘッダー ファイル\STG\ENEMY\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Boss.h">
+      <Filter>ヘッダー ファイル\STG\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="data\BGM\doyoujustspace.mp3">
+      <Filter>リソース ファイル\data\BGM</Filter>
+    </Media>
+    <Media Include="data\BGM\doyoujustspace.wav">
+      <Filter>リソース ファイル\data\BGM</Filter>
+    </Media>
+    <Media Include="data\BGM\Night Lights (Original Mix).mp3">
+      <Filter>リソース ファイル\data\BGM</Filter>
+    </Media>
+    <Media Include="data\BGM\Night Lights .wav">
+      <Filter>リソース ファイル\data\BGM</Filter>
+    </Media>
+    <Media Include="data\BGM\PlayerDie.wav">
+      <Filter>リソース ファイル\data\BGM</Filter>
+    </Media>
+    <Media Include="data\BGM\result.wav">
+      <Filter>リソース ファイル\data\BGM</Filter>
+    </Media>
+    <Media Include="data\BGM\sample000.wav">
+      <Filter>リソース ファイル\data\BGM</Filter>
+    </Media>
+    <Media Include="data\BGM\sample001.wav">
+      <Filter>リソース ファイル\data\BGM</Filter>
+    </Media>
+    <Media Include="data\BGM\title.wav">
+      <Filter>リソース ファイル\data\BGM</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data\BGM\doyoujustspace.txt">
+      <Filter>リソース ファイル\data\BGM</Filter>
+    </Text>
+    <Text Include="data\BGM\Night Lights (Original Mix).txt">
+      <Filter>リソース ファイル\data\BGM</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
